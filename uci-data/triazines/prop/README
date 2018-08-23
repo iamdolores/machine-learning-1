@@ -1,0 +1,57 @@
+Dataset for Propositional Machine Learning
+Learning Quantitative Structure Activity Relationships (QSARs)
+The Inhibition of Dihydrofolate Reductase by Triazines
+
+The data is organised for 6 fold cross-validation series of 186 compounds
+test[123456].ind
+train[123456].ind
+
+The data and methodology are described in detail in:
+King, Ross .D., Hurst, Jonathan. D.,  and Sternberg, Michael.J.E.
+A comparison of artificial intelligence methods for modelling QSARs
+Applied Artificial Intelligence, 1994 (in press).
+
+Hurst, Jonathan. D., King, Ross .D. and Sternberg, Michael.J.E.
+Quantitative Structure-Activity Relationships by neural networks and 
+inductive logic programming: 2. The inhibition of dihydrofolate reductase by 
+triazines. Journal of Computer Aided Molecular Design, 1994 (in press).
+
+The problem is to learn the same greater activity relationship 
+between pairs of compounds as in the accompanying ILP dataset.  
+This is a way of using discrimination algorithms to do regression.
+
+The examples are in attribute vector form. 
+The fist no. is the class (0 or 1)
+
+Each drug has 6 positions of possible substitution. 
+There are 10 attributes for each substitution position
+polar
+size
+flex
+h_doner (I can't spell)
+h_acceptor
+pi_doner.
+pi_acceptor
+polarisable
+sigma
+branch
+
+This produces 60 attributes to describe each drug. 
+As there are 2 drugs in each example this gives 120 attributes in total.  
+The ordering is as above. 
+The lack of a substitution, i.e. the chemical group H is specified by nine -1s.
+All the attribute values are integers.
+The examples are in the same order as the ILP examples.  For each 
+example in the corresponding *.f file, the example is given, then 
+its inverse.
+
+
+Ross D. King
+Biomolecular Modelling Laboratory
+Imperial Cancer Research Fund
+P.O. Box 123
+44 Lincoln's Inn Fields
+London WC2A 3PX
+U.K.
++44-71-242-0200 x3023
+rd_king@icrf.ac.uk

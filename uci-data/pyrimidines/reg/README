@@ -1,0 +1,63 @@
+Dataset for Regression
+Learning Quantitative Structure Activity Relationships (QSARs)
+The Inhibition of Dihydrofolate Reductase by Pyrimidines
+
+
+
+The data comes in 2 parts:
+1) A 5-fold cross-validation series of 55 compounds
+te[12345].dat
+tr[12345].dat
+These correspond to the data described in:
+King, Ross .D., Muggleton, Steven., Lewis, Richard. and Sternberg, Michael.J.E.
+Drug Design by machine learning: the use of inductive logic programming 
+to model the structure-activity relationships of trimethoprim analogues 
+binding to dihydrofolate reductase. 
+Proc. Natl. Acad. Sci. USA. 1992, 89, 11322-11326.
+
+2) An extra dataset of 19 compounds found after the original 55.
+extra19_te.dat
+These are described in:
+King, Ross .D., Hurst, Jonathan. D.,  and Sternberg, Michael.J.E.
+A comparison of artificial intelligence methods for modelling QSARs
+Applied Artificial Intelligence, 1994 (in press).
+
+Hurst, Jonathan. D., King, Ross .D. and Sternberg, Michael.J.E.
+Quantitative Structure-Activity Relationships by neural networks and 
+inductive logic programming: 1. The inhibition of dihydrofolate reductase by 
+pyrimidines. Journal of Computer Aided Molecular Design, 1994 (in press).
+
+The problem is to learn a regression equation/rule/tree to predict 
+the activity from the descriptive structural attributes.
+
+
+The examples are in attribute vector form. 
+The fist no. is the activity of the compound.
+Each drug has 3 positions of possible substitution (345). 
+There are 9 attributes for each substitution position
+polar
+size
+flex
+h_doner (I can't spell)
+h_acceptor
+pi_doner.
+pi_acceptor
+polarisable
+sigma
+This produces 27 attributes to describe each drug. 
+
+All the attribute values are real numbers.  They are rescaled between 0.1 and 0.9.
+
+The ordering of the compounds is that given in Hurst et al.
+
+
+
+Ross D. King
+Biomolecular Modelling Laboratory
+Imperial Cancer Research Fund
+P.O. Box 123
+44 Lincoln's Inn Fields
+London WC2A 3PX
+U.K.
++44-71-242-0200 x3023
+rd_king@icrf.ac.uk

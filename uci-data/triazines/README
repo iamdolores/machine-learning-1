@@ -1,0 +1,24 @@
+Datasets for Machine Learning
+Learning Qualitative Structure Activity Relationships (QSARs)
+The Inhibition of Dihydrofolate Reductase by Triazines
+
+Three different representations of this dataset are given.
+
+1) One for Inductive Logic Programming (ILP) - ilp
+2) One for Propositional Machine Learning Discrimination - prop
+3) One for Propositional Machine Learning Regression - reg
+
+
+All datasets can be freely distributed as long as appropriate references 
+are given to the papers mentioned.
+
+
+Ross D. King
+Biomolecular Modelling Laboratory
+Imperial Cancer Research Fund
+P.O. Box 123
+44 Lincoln's Inn Fields
+London WC2A 3PX
+U.K.
++44-71-242-0200 x3023
+rd_king@icrf.ac.uk
